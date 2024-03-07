@@ -1,0 +1,53 @@
+SE task,Support,Paper ID
+Generating code patches,1,1
+Code comment generation,4,"5,7,29,33"
+Bug fix/Program repair,7,"7,24,35,110,111,20,30"
+Injecting code mutants,1,7
+Assert statement generation,1,7
+Code summarization,5,"10,14,23,67,20"
+Code generation/completion,14,"2,4,18,24,30,48,50,51,54,57,60,77,20,30"
+StackOverflow query reformulation,1,8
+Dynamic software update ,1,9
+Algorithm classification,1,12
+Code clone detection,4,"12,41,76,126"
+Code search,4,"12,30,39,65"
+Program syntesis,1,13
+Automated commit generation,4,"16,70,49, 119"
+Bug report ,1,"17, 112"
+Test oracle generation,1,19
+Code review ,5,"21,58,59,105,121"
+Requirement classification ,2,"25,78"
+Smart contract generation ,2,"26, 73"
+Vulnerability fix,2,"27,40"
+API reviews classification ,1,31
+StackOverflow title generation,3,"32,47,72"
+Vulnerability detection,1,"36, 126"
+Story point estimation,1,37
+Code translation ,6,"41,62,106,109,20,30"
+Code-to-code search,1,41
+Sentiment analysis ,5,"3,42,124,125,127"
+Issue report classification,1,"68, 117"
+String generation secondary studies,1,71
+Pull request description generation,1,43
+Commit classification ,2,"44,49"
+Automatic fault localization,1,45
+StackOverflow post classification ,1,45
+Program merge ,1,53
+Performance improvements,1,55
+Issue title generation ,1,56
+Signal temporal logic requirements,1,22
+Function naming ,1,24
+Binary Code Matching ,1,34
+Text summarization,1,74
+Language translation ,1,75
+Low-code generation,1,107
+Graphical model completion,1,108
+GUI testing,1,113
+Stack overflow post summarization,1,114
+Testing generation,1,115
+App-reviews classification and feedback generation,1,118
+Technical debt detection,1,123
+Classifying UML diagrams,1,128
+Software library recommendation,1,129
+Traceability ,1,132
+,105,

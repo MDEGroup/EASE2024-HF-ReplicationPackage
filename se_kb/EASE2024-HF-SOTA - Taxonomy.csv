@@ -1,0 +1,51 @@
+Macro-task,Sub-tasks
+Code-related task,"        Code summarization
+        Code generation/completion
+        Dynamic software update         
+        Code clone detection
+        Code search
+        Code translation 
+        Code-to-code search
+        Program syntesis
+        Injecting code mutants
+        Program merge 
+        Function naming 
+        Performance improvements
+        Binary Code Matchining 
+        Technical debt detection 
+        Software library recommendation"
+Testing/Program repair,"        Generating code patches
+        Bug fix/Program repair
+        Vulnerability fix
+        Test oracle generation
+        Vulnerability detection
+        Automatic fault localization
+        GUI testing
+        Testing generation
+        Assert statement generation"
+Documentation/Requirements,"        Code comment generation
+        Automated commit generation
+        API reviews classification 
+        Requirement classification 
+        Code review 
+        Bug report generation
+        Signal temporal logic requirements
+        Story point estimation       
+        Traceability"
+Miscellaneous,"        Smart contract generation 
+        Sentiment analysis        
+        Language translation 
+        Low-code generation
+        Graphical model completion 
+        Classifying UML diagrams"
+Classification of SE artifacts,"        StackOverflow post classification
+        Commit classification 
+        Issue report classification
+        App-reviews classification and feedback generation
+        Algorithm classification"
+Text engineering related to SE artifacts,"        StackOverflow query reformulation
+        StackOverflow title generation        
+        Stack overflow post summarization                
+        Pull request description generation        
+        Issue title generation         
+        String generation secondary studies"
