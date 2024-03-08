@@ -15,9 +15,9 @@ SRC_STAT_FREQ = 'stats/sorted_by_freq.csv'
 
 
 #mapping path
-SRC_PAPERS = 'se_kb/EASE2024-HF-SOTA - ALL.csv'
-SRC_SE_TASKS = 'se_kb/EASE2024-HF-SOTA - Taxonomy.csv'
-SRC_MACRO = 'se_kb/EASE2024-HF-SOTA - Extracted_SE_tasks.csv'
+SRC_PAPERS = 'se_kb/papers.csv'
+SRC_SE_TASKS = 'se_kb/macro_sub_tasks.csv'
+SRC_MACRO = 'se_kb/extracted_se_tasks.csv'
 
 
 # Github repo

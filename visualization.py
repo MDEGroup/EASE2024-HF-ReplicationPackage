@@ -177,7 +177,7 @@ def plot_dataset_stats(input_file):
     plt.tight_layout()  # Adjust layout to make room for the rotated x-tick labels
 
     # Save the plot as a PDF file
-    plt.savefig('stats/d2_new_distribution.pdf', format='pdf')
+    plt.savefig('stats/d2_distribution.pdf', format='pdf')
 
     #plt.show()  # Display the plot
 
@@ -225,4 +225,4 @@ def plot_bar_chart(label_fontsize=18, tick_fontsize=24):
 
 plot_bar_chart()
 
-#plot_bar_chart('stats/d2_new_stats.csv')
+#plot_bar_chart('stats/d2_stats.csv')

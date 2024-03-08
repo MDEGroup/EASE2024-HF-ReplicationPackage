@@ -2,9 +2,9 @@ import os
 
 import dump_utils as du
 import config as cf
-from classifier import run_classifier
+
 import pandas as pd
-import yaml
+
 import mapping_utils as mp
 
 import data_utils as d
@@ -23,7 +23,7 @@ def preprocessing_pipeline():
     print(filtered_df.shape)
     d0 = d.group_and_count_by_tags(df_dump, 'stats/d0_stats.csv')
     d1 = d.group_and_count_by_tags(df_main, 'stats/d1_stats.csv')
-    d2 = d.group_and_count_by_tags(filtered_df, 'stats/d2_new_stats.csv')
+    d2 = d.group_and_count_by_tags(filtered_df, 'stats/d2_stats.csv')
 
 
 
@@ -38,36 +38,28 @@ def collect_models_data():
         print("MySQL connection is closed")
 
 
-def mapping_pipeline():
-    ptm = 'bert'
+def mapping_pipeline(ptm):
     similar_ptms = mp.search_ptm_name(ptm, 'datasets/d2.csv')
-    print(similar_ptms)
-    print(mp.get_most_freq_pipeline_tag(similar_ptms))
-
+    #print(similar_ptms)
+    print('Most frequent tag', mp.get_most_freq_pipeline_tag(similar_ptms)[0])
     macro, sub = mp.get_most_freq_se_task(ptm, cf.SRC_PAPERS, cf.SRC_SE_TASKS, cf.SRC_MACRO)
-    print(set(macro))
-    print(len(set(macro)))
-    print(sub)
+
+    print('Similar PTMs', similar_ptms)
+    print('Macro SE task',set(macro))
+    print('Sub-tasks', sub)
+    return similar_ptms, macro, sub
+
 if __name__ == '__main__':
-    #run_classifier(dataset='datasets/d2.csv',desc='card_data', cat='tags', model='CNB', results_csv_path='results/d2_cnb_all.csv')
 
-
-    #mp.search_pdf_content('se_kb','pre-trained')
-
-    mapping_pipeline()
-
-
-    #print(len(similar_ptms))
-
-    # df = pd.read_csv('yaml_only.csv')
-    # print(df.shape)
-    #collect_models_data()
     #preprocessing_pipeline()
-    #preprocessing_pipeline()
-    #yaml_pipeline()
-    #df = pd.read_csv('d1.csv')
-    #df = pd.read_csv('stats/stats_tags_all.csv')
-    #print(df.shape)
+    #run_classifier(dataset='datasets/d2.csv',desc='card_data', cat='tags', model='CNB', results_csv_path='results/cbn_results.csv')
+    mapping_pipeline('bert')
+
+
+
+
+
+
 
 
 
