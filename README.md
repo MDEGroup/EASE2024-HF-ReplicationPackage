@@ -1,7 +1,7 @@
 # EASE2024-HF-ReplicationPackage
 
 
-This repository contains the source code and the supporting data of the paper entitled *Towards automatically categorizing pre-trained models in software engineering: A case study with a Hugging Face dataset*
+This repository contains the source code and the supporting data of the paper entitled *Automated categorization of pre-trained models in software engineering: A case study with a Hugging Face dataset*
 
 
 
