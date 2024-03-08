@@ -44,6 +44,6 @@ def get_model_data(conn):
     #list_results.append(cur.fetchall())
     headers = ['model_name', 'card_data', 'tags', 'likes', 'downloads']
 
-    du.write_tuples_to_csv('datasets/out_file_missing.csv', list_results, headers)
+    du.write_tuples_to_csv('datasets/original_dump.csv', list_results, headers)
 
     return list_results

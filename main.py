@@ -2,7 +2,7 @@ import os
 
 import dump_utils as du
 import config as cf
-
+from classifier import run_classifier
 import pandas as pd
 
 import mapping_utils as mp
@@ -11,7 +11,7 @@ import data_utils as d
 
 def preprocessing_pipeline():
 
-    df_dump = pd.read_csv('datasets/out_file_missing.csv')
+    df_dump = pd.read_csv('datasets/original_dump.csv')
     print(df_dump.shape)
     df_main = pd.read_csv(cf.INPUT_DATA_PATH)
     print(df_main.shape)
@@ -51,9 +51,9 @@ def mapping_pipeline(ptm):
 
 if __name__ == '__main__':
 
-    #preprocessing_pipeline()
-    #run_classifier(dataset='datasets/d2.csv',desc='card_data', cat='tags', model='CNB', results_csv_path='results/cbn_results.csv')
+    #run_classifier(dataset='datasets/d2.csv',desc='card_data', cat='tags', model='CNB', results_csv_path='results/cnb_results.csv')
     mapping_pipeline('bert')
+    #preprocessing_pipeline()
 
 
 

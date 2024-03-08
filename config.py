@@ -1,9 +1,9 @@
-# MySQL connection
-HOST = "localhost"
-PORT = "3307"
-DB = "hf"
-USER = "root"
-PWD = "admin"
+# MySQL connection setup
+HOST = ""
+PORT = ""
+DB = ""
+USER = ""
+PWD = ""
 
 #local path
 
@@ -15,11 +15,10 @@ SRC_STAT_FREQ = 'stats/sorted_by_freq.csv'
 
 
 #mapping path
-SRC_PAPERS = 'se_kb/papers.csv'
+SRC_PAPERS = 'se_kb/papers_selected.csv'
 SRC_SE_TASKS = 'se_kb/macro_sub_tasks.csv'
 SRC_MACRO = 'se_kb/extracted_se_tasks.csv'
 
 
-# Github repo
-TOKEN = "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"
-GITHUB = "https://github.com/"
+
+
